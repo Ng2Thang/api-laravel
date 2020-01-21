@@ -5,13 +5,13 @@ jobs:
       - image: circleci/php:latest
     steps:
       - checkout
-      - run: <command>
+      - run: echo building
   test:
     docker:
       - image: circleci/php:latest
     steps:
       - checkout
-      - run: <command>
+      - run: echo testing
 workflows:
   version: 2
   build_and_test:
