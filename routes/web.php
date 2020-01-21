@@ -56,4 +56,4 @@ Route::group(['prefix'=>'admin','middleware'=>'admin'], function () {
     });
 Route::get('ipa',function(){
     return view('api.blade.php');
-})
+});
