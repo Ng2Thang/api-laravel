@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/php:latest
+      - image: eboraas/apache-php:latest
     steps:
       - checkout
       - run: echo building
   test:
     docker:
-      - image: circleci/php:latest
+      - image: eboraas/apache-php:latest
     steps:
       - checkout
       - run: echo testing
